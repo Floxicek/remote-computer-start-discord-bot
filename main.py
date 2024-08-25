@@ -17,7 +17,7 @@ bot = commands.Bot(command_prefix='!', intents=intents)
 async def on_ready():
     print(f'We have logged in as {bot.user}')
 
-@bot.command()
+@bot.command(aliases=['computer', 'start'])
 @commands.has_role('Minecraft')
 async def start(ctx):
     print("Starting computer")
